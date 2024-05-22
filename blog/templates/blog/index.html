@@ -1,9 +1,12 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block title %}
     My Blog
 {% endblock %}
-
+{% block css_files %}
+    <link rel="stylesheet" href=" {% static "blog/index.css" %}"/>
+{% endblock %}
 
 {% block content %}
     <header id="main-navigation">
@@ -17,7 +20,34 @@
         <header>
             <img src="" alt="Przemek - The Author Of This Blog" />
             <h2>PRZEMEK'S BLOG</h2>
-        </header>    
+        </header>
+        <p>Hi, I am Przemek and I love to blog about tech and the world!</p>
     </section>
-    <h1>Welcome to my blog</h1>
+    
+    <section id="latest-posts">
+        <h2>My latests Thoughts</h2>
+
+        <ul>
+            <li>
+                <article class="post">
+                    <a href=""> 
+                        <img src="" alt="Mountain Hiking">
+                        <div class="post__content">
+                            <h3>Mountain Hiking</h3>
+                            <p>There is nothing like views you get when hiking, in the mountains! And I was'nt even prepared for what happened whilist was enjoying the view!
+                            </p>
+                        </div>
+                    </a>
+                </article>    
+            </li>
+        </ul>
+    </section>
+
+    </section id="about">
+        <h2>What I Do</h2>
+        <p>I love programming, I love to help others and I enjoy exploring new technologies in geenral!
+        </p>
+        <p>My goal is too keen on growing as a developer - and if I couild help you do the same, I'd be very happy!
+        </p>
+    </section>
 {% endblock %}
