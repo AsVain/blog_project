@@ -20,7 +20,7 @@ all_posts = [       #lista postów, każdy post będzie słownikiem
     },
     {
         "slug": "programming-is-fun",
-        "image": "mountains.jpg",
+        "image": "woods.jpg",
         "author": "Maximilian",
         "date": date(2024, 5, 21),
         "title": "Mountain Hiking",
@@ -35,7 +35,7 @@ all_posts = [       #lista postów, każdy post będzie słownikiem
     },
     {
         "slug": "into-the-woods",
-        "image": "mountains.jpg",
+        "image": "coding.jpg",
         "author": "Maximilian",
         "date": date(2024, 5, 26),
         "title": "Mountain Hiking",
